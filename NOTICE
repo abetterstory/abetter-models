@@ -1,0 +1,8 @@
+abetter-models
+
+siglip-b16-224-vision-int8.onnx (release embed-siglip-b16-224-int8-1)
+  A modified form of SigLIP base, patch 16, 224 px (google/siglip-base-patch16-224), by Google, licensed under the
+  Apache License 2.0. https://huggingface.co/google/siglip-base-patch16-224
+  https://github.com/google-research/big_vision
+  Changes: only the vision tower, exported to ONNX (opset 17) and its MatMul weights quantised to int8 (dynamic
+  quantisation; the patch-embedding Conv kept in float). No other training or data.
